@@ -1,5 +1,8 @@
 #!/bin/bash
 
-text=`zenity --entry --text "Enter some text into the entry."`
+text=$(zenity --entry --text "Enter some text into the entry.")
 
-echo "Entry text:" $text
+if [[ $? -eq 0 ]]
+then
+    echo "Entry text:" $text
+fi

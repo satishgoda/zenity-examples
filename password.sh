@@ -1,6 +1,6 @@
 #!/bin/bash
 
-values=`zenity --password --username --text="Enter your username and password."`
+values=$(zenity --password --username --text="Enter your username and password.")
 
 case $? in
     0)
